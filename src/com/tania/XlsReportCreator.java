@@ -23,7 +23,7 @@ public class XlsReportCreator implements ReportCreator {
         return linkFilePath;
     }
 
-    public void fillReportTable(Workbook book, List<Map<String, String>> data) {
+    private void fillReportTable(Workbook book, List<Map<String, String>> data) {
 
         Sheet sheet = book.createSheet("Отчёт для бухгалтерии");
         sheet.setFitToPage(true);

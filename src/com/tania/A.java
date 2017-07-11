@@ -16,13 +16,15 @@ public class A {
         System.out.println(storeId2);
         if (true) {
             System.out.println("throw Exc");
-            throw new Exception("kdj");
+            //throw new Exception("kdj");
         }
         try {
             d();
         } finally {
             System.out.println("finally");
+            System.out.println("time="+System.nanoTime());
         }
+
     }
 
     private static void d() {

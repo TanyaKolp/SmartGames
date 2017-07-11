@@ -62,15 +62,12 @@ public class PdfReportCreatorTest implements ReportCreator {
         // Setup output
         OutputStream out;
         out = new java.io.FileOutputStream("employee.pdf");
-
         try {
             // Construct fop with desired output format
             Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, foUserAgent, out);
-
             // Setup XSLT
             TransformerFactory factory = TransformerFactory.newInstance();
             Transformer transformer = factory.newTransformer(new StreamSource(xsltFile));
-
             // Resulting SAX events (the generated FO) must be piped through to FOP
             Result res = new SAXResult(fop.getDefaultHandler());
 
@@ -93,21 +90,15 @@ public class PdfReportCreatorTest implements ReportCreator {
     public void convertToFO() throws IOException, FOPException, TransformerException {
         // the XSL FO file
         File xsltFile = new File("template2.xsl");
-
-
         /*TransformerFactory factory = TransformerFactory.newInstance();
         Transformer transformer = factory.newTransformer(new StreamSource("F:\\Temp\\template2.xsl"));*/
-
         // the XML file which provides the input
         StreamSource xmlSource = new StreamSource(new File("Employees2.xml"));
-
         // a user agent is needed for transformation
         /*FOUserAgent foUserAgent = fopFactory.newFOUserAgent();*/
         // Setup output
         OutputStream out;
-
         out = new java.io.FileOutputStream("temp.fo");
-
         try {
             // Setup XSLT
             TransformerFactory factory = TransformerFactory.newInstance();
@@ -120,8 +111,6 @@ public class PdfReportCreatorTest implements ReportCreator {
 
             //Start XSLT transformation and FOP processing
             transformer.transform(xmlSource, res);
-
-
             // Start XSLT transformation and FOP processing
             // That's where the XML is first transformed to XSL-FO and then
             // PDF is created

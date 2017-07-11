@@ -29,7 +29,6 @@ import java.util.Map;
  * Created by tkolpakova on 06.07.17.
  */
 public class PdfReportCreator implements ReportCreator {
-    @Override
     public String create(List<Map<String, String>> data) {
         String pdfFileName = "testPDF";
         try {
@@ -140,7 +139,7 @@ public class PdfReportCreator implements ReportCreator {
         FopFactoryBuilder fopFactoryBuilder = new FopFactoryBuilder(new File(".").toURI())
                 .setConfiguration(cfg);
         FopFactory fopFactory = fopFactoryBuilder.build();
-//        FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
+//        FopFactory fopFactory = FopFactory.newInstance(new File("fop.xconf").toURI());
 
 
         // a user agent is needed for transformation

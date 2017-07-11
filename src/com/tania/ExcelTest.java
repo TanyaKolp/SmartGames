@@ -1,8 +1,5 @@
 package com.tania;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,11 +13,11 @@ public class ExcelTest {
 
     public static void main(String[] args) {
         AccountingReport acc = new AccountingReport();
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<String,String>();
         for (String s : ReportCreator.VALUES_NAMES) {
             map.put(s, s);
         }
-        List<Map<String, String>> data = new ArrayList<>();
+        List<Map<String, String>> data = new ArrayList< Map<String, String>>();
         for (int i = 0; i < 100; i++) {
             data.add(map);
 
