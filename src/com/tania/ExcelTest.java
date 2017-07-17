@@ -26,8 +26,8 @@ public class ExcelTest {
         System.out.println("xls writtten " + xls);
         String csv = acc.createReport(data, "csv");
         System.out.println("csv writtten " + csv);
-       // String pdf = acc.createReport(data, "pdf");
-       // System.out.println("pdf writtten " + pdf);
+        String pdf = acc.createReport(data, "pdf");
+        System.out.println("pdf writtten " + pdf);
 
         System.out.println(new Xlsformula().create(data));
     }
