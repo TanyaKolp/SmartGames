@@ -7,4 +7,6 @@ public interface TYy {
     static  final String aaa = "dksaldk";
     public void hkj();
 
+
+
 }
