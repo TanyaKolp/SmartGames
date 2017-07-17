@@ -1,29 +1,34 @@
 package com.tania;
 
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by tania on 26.06.17.
  */
 public class A {
     public static void main(String[] args) throws Throwable {
-        Object obj = null;
-        Long storeId = (Long) (obj != null ? 100L : null);
-        System.out.println(storeId);
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i < 10; i++) {
+            set.add(String.valueOf(i));
+        }
+        set.add(null);
+        List<String> list = new ArrayList<>();
+        list.addAll(set);
+        System.out.println(list);
+        Map<String, String> stringStringMap =
+                Collections.unmodifiableMap(new HashMap<String, String>() {
+                    {
+                        put("aa","aa");
+                        put("aa","aa");
+                        put("aa","aa");
+                        put("aa","aa");
+                    }
 
-        Object obj2 = new Object();
-        Long storeId2 = (Long) (obj2!= null ? 100L : 0L);
-        System.out.println(storeId2);
-        if (true) {
-            System.out.println("throw Exc");
-            //throw new Exception("kdj");
-        }
-        try {
-            d();
-        } finally {
-            System.out.println("finally");
-            System.out.println("time="+System.nanoTime());
-        }
+        });
+
+        Object o = null;
+        String ostr = o.toString();
+
 
     }
 

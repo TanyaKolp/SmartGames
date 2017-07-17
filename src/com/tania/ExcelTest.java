@@ -15,10 +15,10 @@ public class ExcelTest {
         AccountingReport acc = new AccountingReport();
         Map<String, String> map = new HashMap<String,String>();
         for (String s : ReportCreator.VALUES_NAMES) {
-            map.put(s, s);
+            map.put(s, "1");
         }
         List<Map<String, String>> data = new ArrayList< Map<String, String>>();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             data.add(map);
 
         }
@@ -26,7 +26,9 @@ public class ExcelTest {
         System.out.println("xls writtten " + xls);
         String csv = acc.createReport(data, "csv");
         System.out.println("csv writtten " + csv);
-        String pdf = acc.createReport(data, "pdf");
-        System.out.println("pdf writtten " + pdf);
+       // String pdf = acc.createReport(data, "pdf");
+       // System.out.println("pdf writtten " + pdf);
+
+        System.out.println(new Xlsformula().create(data));
     }
 }

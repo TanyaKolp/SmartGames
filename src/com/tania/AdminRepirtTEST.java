@@ -1,5 +1,6 @@
 package com.tania;
 
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -7,17 +8,25 @@ import java.util.*;
  */
 public class AdminRepirtTEST {
     public static void main(String[] args) {
-        AdminXlsReportMakerService reportMakerService = new AdminXlsReportMakerServiceImpl();
-        Map<String, String> map = new HashMap<String,String>();
+        FORtestAdminXlsReportMakerService service = new FORtestAdminXlsReportMakerServiceImpl();
+        LinkedHashMap<String, Object> map = new LinkedHashMap<>();
+        int j = 0;
         for (String s : ReportCreator.COLUMN_NAMES) {
-            map.put(s, s);
+            if (j%2==0) {
+                map.put(s, 100);
+            }else {
+                map.put(s, "nameРОРд");
+            }
+            j++;
         }
-       // map.put("",null);
-        List<Map<String, String>> data = new ArrayList<>();
+        List<LinkedHashMap<String, Object>> data = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             data.add(map);
         }
-        List<String> headers = new ArrayList<>(Arrays.asList(ReportCreator.COLUMN_NAMES));
-        reportMakerService.createXlsReport(data, headers);
+        try {
+            System.out.println(service.createSalesSumReport(data));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
