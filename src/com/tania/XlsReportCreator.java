@@ -36,6 +36,7 @@ public class XlsReportCreator implements ReportCreator {
         for (int i = 0; i < data.size(); i++) {
             Map<String, String> columns = data.get(i);
             Row row = sheet.createRow(countRows++);
+
             Cell cellNo = row.createCell(0);
             sheet.setColumnWidth(cellNo.getColumnIndex(), 5 * 256);
             cellNo.setCellValue(i + 1);

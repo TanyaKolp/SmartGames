@@ -19,6 +19,8 @@ public class Test {
             System.out.print(findNumber.arrayY[i] + "-");
         }
 
+        String d = "kk";
+        System.out.println("\n"+d.equals("kK"));
     }
 
     public static int method1(int a, int n) {

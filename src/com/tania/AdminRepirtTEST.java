@@ -1,5 +1,8 @@
 package com.tania;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.util.*;
 
@@ -9,12 +12,17 @@ import java.util.*;
 public class AdminRepirtTEST {
     public static void main(String[] args) {
         FORtestAdminXlsReportMakerService service = new FORtestAdminXlsReportMakerServiceImpl();
+        ObjectMapper objectMapper = new ObjectMapper();
+        List<LinkedHashMap<String, Object>> o = null;
+
+        System.out.println(o.size());
+        System.out.println(o);
         LinkedHashMap<String, Object> map = new LinkedHashMap<>();
         int j = 0;
         for (String s : ReportCreator.COLUMN_NAMES) {
-            if (j%2==0) {
+            if (j % 2 == 0) {
                 map.put(s, 100);
-            }else {
+            } else {
                 map.put(s, "nameРОРд");
             }
             j++;
@@ -24,7 +32,7 @@ public class AdminRepirtTEST {
             data.add(map);
         }
         try {
-            System.out.println(service.createSalesSumReport(data));
+            System.out.println(service.createItemReport(o));
         } catch (IOException e) {
             e.printStackTrace();
         }
