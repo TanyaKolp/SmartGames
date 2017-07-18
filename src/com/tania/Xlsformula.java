@@ -35,11 +35,19 @@ public class Xlsformula implements ReportCreator {
         createTableHeader(book, sheet, namesOfColumns);
         //PrintSetup printSetup = sheet.getPrintSetup();
         // printSetup.setLandscape(true);
+        CellStyle style = book.createCellStyle();
+        System.out.println("before"+style.getFillBackgroundColor());
+        style.setFillPattern(FillPatternType.ALT_BARS);
+       // style.setFillPattern(FillPatternType.ALT_BARS);
+        System.out.println("after"+style.getFillBackgroundColor());
+        System.out.println("expected"+IndexedColors.GREY_25_PERCENT.getIndex());
+
         int countRows = sheet.getPhysicalNumberOfRows();
         for (int i = 0; i < data.size(); i++) {
             Map<String, String> columns = data.get(i);
             Row row = sheet.createRow(countRows++);
             Cell cellNo = row.createCell(0);
+            row.setRowStyle(style);
             sheet.setColumnWidth(cellNo.getColumnIndex(), 5 * 256);
             cellNo.setCellValue(i + 1);
             Cell cell;
@@ -49,6 +57,7 @@ public class Xlsformula implements ReportCreator {
                 cellColumn.setCellValue(columns.get(name));/////////
                 sheet.setColumnWidth(cellColumn.getColumnIndex(), 22 * 256);
                 j++;
+                cellColumn.setCellStyle(style);
             }
         }
         //total
@@ -57,7 +66,6 @@ public class Xlsformula implements ReportCreator {
         for (int i = 0; i < COLUMN_NAMES.length; i++) {
             String colNamestart = CellReference.convertNumToColString(i);
             startCell = colNamestart + 2;
-            System.out.println("startCell=" + startCell);
 
             String stopCell = colNamestart + data.size();
             String sumFormula = String.format("SUM(%s:%s)", startCell, stopCell);
