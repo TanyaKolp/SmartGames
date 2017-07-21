@@ -43,6 +43,7 @@ public class AgreementFormCreater {
         subTitleValue.append(dateFormat.format(new Date()));
         subTitleRun.setText(subTitleValue.toString());
 
+        XWPFParagraph enactment = document.createParagraph();
 
 
 
