@@ -25,7 +25,7 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
         DateFormat fullFormat = new SimpleDateFormat("dd MMMM yyyy");
         System.out.println(params);
         List<String> keyOrder = new ArrayList<>(Arrays.asList("no", "date", "fulldate", "name", "director",
-                "basis","no","date", "period", "sumNum", "sumNum", "sumNum", "sumNum"));
+                "basis","no","date", "period", "sumNum", "sumStr", "rewardNum", "rewardStr"));
         int i = 0;
         try {
             FileInputStream fis = new FileInputStream("result.docx");
