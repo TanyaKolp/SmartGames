@@ -6,6 +6,8 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by tanya on 21.07.17.
@@ -13,6 +15,12 @@ import java.io.FileOutputStream;
 public class DocTest {
     public static void main(String[] args) throws Exception {
         AgreementFormCreater app = new AgreementFormCreater();
-        app.createForm(null);
+        Map<String, String> params =new HashMap<>();
+        params.put("name", "Name");
+        params.put("directorName", "Директор");
+        params.put("basis", "Устав");
+        params.put("no", "100");
+        params.put("period", "год");
+        app.createForm(params);
     }
 }
