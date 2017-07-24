@@ -1,12 +1,11 @@
 package com.tania;
 
-import org.apache.poi.xwpf.usermodel.PositionInParagraph;
-import org.apache.poi.xwpf.usermodel.TextSegement;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+import org.apache.poi.xwpf.usermodel.*;
+import org.openxmlformats.schemas.wordprocessingml.x2006.main.impl.CTRImpl;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -27,10 +26,22 @@ public class DocEditor {
                     System.out.println("test="+ p.getText(textSegement));
                     System.out.println( "char="+   textSegement.getBeginPos().getChar());
                     System.out.println("endrun="+textSegement.getEndRun());
-
                     System.out.println("beginchar="+textSegement.getBeginChar());
                 }
             }
+            for (XWPFParagraph p : dox.getParagraphs()) {
+                List<XWPFRun> runs = p.getRuns();
+                if (runs != null) {
+                    for (XWPFRun r : runs) {
+                        String text = r.getText(0);
+                        if (text != null && text.contains("%")) {
+                            text = text.replace("%", "haystack");
+                            r.setText(text, 0);
+                        }
+                    }
+                }
+            }
+            dox.write(new FileOutputStream("result.docx"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
