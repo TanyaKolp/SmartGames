@@ -6,13 +6,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by tanya on 24.07.17.
@@ -25,8 +21,8 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
         DateFormat fullFormat = new SimpleDateFormat("dd MMMM yyyy");
         System.out.println(params);
         List<String> keyOrder = new ArrayList<>(Arrays.asList("no", "date", "fulldate", "name", "director",
-                "basis","no","date", "period", "sumNum", "sumStr", "rewardNum", "rewardStr"));
-        int i = 0;
+                "basis", "no", "date", "period", "sumNum", "sumStr", "rewardNum", "rewardStr"));
+        Iterator<String> sequence = keyOrder.iterator();
         try {
             FileInputStream fis = new FileInputStream("result.docx");
             XWPFDocument dox = new XWPFDocument(fis);
@@ -34,40 +30,18 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
                 List<XWPFRun> runs = p.getRuns();
                 if (runs != null) {
                     for (XWPFRun r : runs) {
-                        String text = r.getText(0);
-                        if (text != null && text.contains("#")) {
-                            int index = text.indexOf("#");
-                            while (index > -1) {
-                                if (params.get(keyOrder.get(i)) != null) {
-                                    text = text.replaceFirst("#", params.get(keyOrder.get(i)));
-                                    r.setText(text, 0);
-                                }
-                                index = text.indexOf( "#", index+1 );
-                                i++;
-                            }
-                        }
+                        fillForm(params, r, keyOrder,sequence);
                     }
                 }
             }
             List<String> keyOrderTable = new ArrayList<>(Arrays.asList("directorStatus", "directorShort", "directorStatus", "directorShort"));
-            int j=0;
+            Iterator<String> sequenceForTable = keyOrderTable.iterator();
             for (XWPFTable tbl : dox.getTables()) {
                 for (XWPFTableRow row : tbl.getRows()) {
                     for (XWPFTableCell cell : row.getTableCells()) {
                         for (XWPFParagraph p : cell.getParagraphs()) {
                             for (XWPFRun r : p.getRuns()) {
-                                String text = r.getText(0);
-                                if (text != null ) {
-                                    int index = text.indexOf("#");
-                                    while (index > -1) {
-                                        if (params.get(keyOrderTable.get(j)) != null) {
-                                            text = text.replaceFirst("#", params.get(keyOrderTable.get(j)));
-                                            r.setText(text, 0);
-                                        }
-                                        index = text.indexOf( "#", index+1 );
-                                        j++;
-                                    }
-                                }
+                                fillForm(params, r, keyOrderTable, sequenceForTable);
                             }
                         }
                     }
@@ -81,6 +55,21 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
             e.printStackTrace();
         }
         return null;
+    }
+
+    private void fillForm(Map<String, String> params, XWPFRun r, List<String> keyOrder, Iterator<String> sequence) {
+        String text = r.getText(0);
+        if (text != null) {
+            int index = text.indexOf("#");
+            while (index > -1) {
+                String next = sequence.next();
+                if (params.get(next) != null) {
+                    text = text.replaceFirst("#", params.get(next));
+                    r.setText(text, 0);
+                }
+                index = text.indexOf("#", index + 1);
+            }
+        }
     }
 }
 

@@ -29,8 +29,8 @@ public class DocTest {
         params.put("sumStr", "число");
         params.put("rewardNum", "2 000");
         params.put("rewardStr", "число");
-        params.put("date", "234324");
-        params.put("fulldate", "234324");
+        params.put("date", "2015-05-01");
+        params.put("fulldate", "2015-01-01");
 
         //app.createForm(params);
         creator.createForm(params);
