@@ -1,11 +1,13 @@
 package com.tania;
 
+import jdk.internal.util.xml.impl.ReaderUTF8;
 import org.apache.avalon.framework.configuration.Configuration;
 import org.apache.avalon.framework.configuration.ConfigurationException;
 import org.apache.avalon.framework.configuration.DefaultConfigurationBuilder;
 import org.apache.fop.apps.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -15,6 +17,7 @@ import javax.xml.transform.Result;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamResult;
@@ -22,6 +25,7 @@ import javax.xml.transform.stream.StreamSource;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.Reader;
 import java.util.List;
 import java.util.Map;
 
@@ -47,8 +51,10 @@ public class PdfReportCreator implements ReportCreator {
         return pdfFileName;
     }
 
-    private String createXmlForPdf(List<Map<String, String>> data) {
+    private DOMResult createXmlForPdf(List<Map<String, String>> data) {
         String filePath = "file.xml";
+        DOMResult result = new DOMResult();
+
         try {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
@@ -64,7 +70,6 @@ public class PdfReportCreator implements ReportCreator {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File("file.xml"));
             // Output to console for testing
             // StreamResult result = new StreamResult(System.out);
             transformer.transform(source, result);
@@ -74,7 +79,7 @@ public class PdfReportCreator implements ReportCreator {
         } catch (TransformerException tfe) {
             tfe.printStackTrace();
         }
-        return filePath;
+        return result;
     }
 
     private void fillDataRows(List<Map<String, String>> data, Document doc, Element rootElement) {
@@ -131,8 +136,12 @@ public class PdfReportCreator implements ReportCreator {
         // the XSL FO file
         File xsltFile = new File("template.xsl");
         // the XML file which provides the input
-        String dataXmlPath = createXmlForPdf(data);
-        StreamSource xmlSource = new StreamSource(new File(dataXmlPath));
+        DOMResult dataXmlPath = createXmlForPdf(data);
+
+        Document document = (Document) dataXmlPath.getNode();
+        DOMSource source = new DOMSource(document);
+
+//        StreamSource xmlSource = new StreamSource(new File(dataXmlPath));
         // create an instance of fop factory
         DefaultConfigurationBuilder cfgBuilder = new DefaultConfigurationBuilder();
         Configuration cfg = cfgBuilder.buildFromFile(new File("mycfg.xml"));
@@ -162,7 +171,7 @@ public class PdfReportCreator implements ReportCreator {
             // Start XSLT transformation and FOP processing
             // That's where the XML is first transformed to XSL-FO and then
             // PDF is created
-            transformer.transform(xmlSource, res);
+            transformer.transform(source, res);
         } finally {
             out.close();
         }
