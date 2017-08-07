@@ -20,9 +20,6 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
         DateFormat shortFormat = new SimpleDateFormat("dd.MM.yyyy");
         DateFormat fullFormat = new SimpleDateFormat("dd MMMM yyyy");
         System.out.println(params);
-        List<String> keyOrder = new ArrayList<>(Arrays.asList("no", "date", "fulldate", "name", "director",
-                "basis", "no", "date", "period", "sumNum", "sumStr", "rewardNum", "rewardStr"));
-        Iterator<String> sequence = keyOrder.iterator();
         try {
             FileInputStream fis = new FileInputStream("result.docx");
             XWPFDocument dox = new XWPFDocument(fis);
@@ -30,18 +27,17 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
                 List<XWPFRun> runs = p.getRuns();
                 if (runs != null) {
                     for (XWPFRun r : runs) {
-                        fillForm(params, r, keyOrder,sequence);
+                        fillForm(params, r);
                     }
                 }
             }
-            List<String> keyOrderTable = new ArrayList<>(Arrays.asList("directorStatus", "directorShort", "directorStatus", "directorShort"));
-            Iterator<String> sequenceForTable = keyOrderTable.iterator();
+
             for (XWPFTable tbl : dox.getTables()) {
                 for (XWPFTableRow row : tbl.getRows()) {
                     for (XWPFTableCell cell : row.getTableCells()) {
                         for (XWPFParagraph p : cell.getParagraphs()) {
                             for (XWPFRun r : p.getRuns()) {
-                                fillForm(params, r, keyOrderTable, sequenceForTable);
+                                fillForm(params, r);
                             }
                         }
                     }
@@ -57,19 +53,15 @@ public class AgreementFormCreatorImpl implements AgreementFormCreator {
         return null;
     }
 
-    private void fillForm(Map<String, String> params, XWPFRun r, List<String> keyOrder, Iterator<String> sequence) {
+    private void fillForm(Map<String, String> params, XWPFRun r) {
         String text = r.getText(0);
-        if (text != null) {
-            int index = text.indexOf("#");
-            while (index > -1) {
-                String next = sequence.next();
-                if (params.get(next) != null) {
-                    text = text.replaceFirst("#", params.get(next));
-                    r.setText(text, 0);
-                }
-                index = text.indexOf("#", index + 1);
-            }
+        System.out.println(text);
+        if (params.containsKey(text)) {
+            text = text.replaceFirst(text, params.get(text));
+            r.setStrikeThrough(false);
+            r.setText(text, 0);
         }
     }
+
 }
 
