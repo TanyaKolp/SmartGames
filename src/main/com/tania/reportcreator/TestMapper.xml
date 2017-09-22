@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- ~ Filename : CustomSalesMapper.xml
+	~ Function : ~ Comment : ~ History : 2016/07/01, Create ~ ~ Version : 1.0
+	~ Author : Copyright (c) 2016 by JC Square Inc. All Rights Reserved. -->
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jc.pico.utils.customMapper.admin.TestMapper">
+    <select id="getSalesForAccountingReport" parameterType="hashMap" resultType="java.util.LinkedHashMap">
+        SELECT
+        STORE.STORE_NM AS storeName,
+        BRAND.BRAND_NM AS brandName,
+        STORE.BIZ_NO AS storeINN,
+        SALES.ORDER_NO AS orderNo,
+        METHOD.METHOD_NAME AS payType,
+        METHOD.AMOUNT AS amount,
+        DATE_FORMAT(SALES.SALES_TM_LOCAL, '%Y-%m-%d') AS payDay,
+        TIME_FORMAT(SALES.SALES_TM_LOCAL, '%H:%i:%s') AS payTime
+        FROM
+        TB_SVC_SALES SALES
+        INNER JOIN
+        (SELECT SP.SALES_ID AS ID,
+        SP.PAY_METHOD AS METHOD_INDEX,
+        SP.AMOUNT,
+        (SELECT TITLE FROM TB_BASE_BCODE C WHERE C.BASE_CD = SP.PAY_METHOD) AS METHOD_NAME
+        FROM TB_SVC_SALES_PAY SP
+        ) METHOD ON METHOD.ID = SALES.ID
+
+        INNER JOIN
+        (SELECT ID, STORE_NM, BIZ_NO
+        FROM TB_SVC_STORE) STORE
+        ON STORE.ID = SALES.STORE_ID
+
+        INNER JOIN
+        (SELECT ID, BRAND_NM
+        FROM TB_SVC_BRAND) BRAND
+        ON BRAND.ID = SALES.BRAND_ID
+
+        WHERE
+        METHOD.METHOD_INDEX = #{paymentType}
+        <if test="fromdate != null and todate != null">
+            AND SALES_TM_LOCAL BETWEEN DATE_ADD(#{fromdate}, INTERVAL 0 SECOND)
+            AND DATE_ADD(#{todate}, INTERVAL '23:59:59' HOUR_SECOND)
+        </if>
+        <if test="brandIDs != null ">
+            AND BRAND.ID IN
+            <foreach item="item" index="index" collection="brandIDs"
+                     open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </if>
+    </select>
+</mapper>
