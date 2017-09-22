@@ -1,76 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23d8886c-1d68-4def-84ac-99a9c17e8a8f" name="Default" comment="doc editor">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ARIALUNI.TTF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mycfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/A.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/DocEditor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/DocHF/Docreader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/DocHF/TEST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/ExcelTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/FindFillBox.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/TYy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/TestFigny.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/Visitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/agreeform/AgreementFormCreater.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/agreeform/AgreementFormCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/agreeform/AgreementFormCreatorImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/agreeform/CreatorFormFromTemplate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/agreeform/DocTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/FindNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/MyElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/MyOneWayLinkedList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/Mydata.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/Mydatasec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/Office.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/Tree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/TreeNodeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/exersises/XmlCreate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/games/Lambda.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/mapreduce/KeyValueObj.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/mapreduce/MapReduce.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/mapreduce/MyMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/mapreduce/MyReduce.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/AccountingReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/AdminRepirtTEST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/AdminXlsReportMakerService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/AdminXlsReportMakerServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/CsvReportCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/DocCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/FORtestAdminXlsReportMakerService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/FORtestAdminXlsReportMakerServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/PdfReportCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/PdfReportCreatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/ReportCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/TEST_DocCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/TestMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/TestMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/XlsReportCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/Xlsformula.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/reportcreator/csvTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tania/spark/SparkTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template.xsl" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result.docx" afterPath="$PROJECT_DIR$/result.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/data_template.xls" afterPath="$PROJECT_DIR$/src/resources/data_template.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/grid_template.xls" afterPath="$PROJECT_DIR$/src/resources/grid_template.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/Комплектация номенклатуры.xls" afterPath="$PROJECT_DIR$/src/resources/Комплектация номенклатуры.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test22.xls" afterPath="$PROJECT_DIR$/test22.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="23d8886c-1d68-4def-84ac-99a9c17e8a8f" name="Default" comment="victory over .doc">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/Data.java" afterPath="$PROJECT_DIR$/src/main/com/tania/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/jxls_test/Creator.java" afterPath="$PROJECT_DIR$/src/main/com/tania/jxls_test/Creator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/jxls_test/JXSLtest.java" afterPath="$PROJECT_DIR$/src/main/com/tania/jxls_test/JXSLtest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/nasled/A.java" afterPath="$PROJECT_DIR$/src/main/com/tania/nasled/A.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/nasled/B.java" afterPath="$PROJECT_DIR$/src/main/com/tania/nasled/B.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/nasled/DoClass.java" afterPath="$PROJECT_DIR$/src/main/com/tania/nasled/DoClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/nasled/Main.java" afterPath="$PROJECT_DIR$/src/main/com/tania/nasled/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/poiXLS/Test.java" afterPath="$PROJECT_DIR$/src/main/com/tania/poiXLS/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java" afterPath="$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/tania/trycatchTEST/Main.java" afterPath="$PROJECT_DIR$/src/main/com/tania/trycatchTEST/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test1.iml" afterPath="$PROJECT_DIR$/test1.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -91,8 +23,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="38" column="55" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+            <state relative-caret-position="1620">
+              <caret line="81" column="19" lean-forward="false" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,72 +36,13 @@
             <state relative-caret-position="640">
               <caret line="37" column="45" lean-forward="false" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="e#273#339#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/nasled/A.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding>
-                <element signature="e#203#204#0" expanded="false" />
-                <element signature="e#237#238#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="B.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/nasled/B.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding>
-                <element signature="e#212#213#0" expanded="false" />
-                <element signature="e#246#247#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/nasled/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/trycatchTEST/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
@@ -179,33 +52,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/nasled/DoClass.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="259">
+              <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/tania/Data.java">
+      <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Stream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#246#247#0" expanded="false" />
-                <element signature="e#272#273#0" expanded="false" />
-                <element signature="e#310#311#0" expanded="false" />
-                <element signature="e#340#341#0" expanded="false" />
-                <element signature="e#372#373#0" expanded="false" />
-                <element signature="e#400#401#0" expanded="false" />
-                <element signature="e#442#443#0" expanded="false" />
-                <element signature="e#476#477#0" expanded="false" />
-                <element signature="e#522#523#0" expanded="false" />
-                <element signature="e#578#579#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="13">
+              <caret line="327" column="30" lean-forward="true" selection-start-line="327" selection-start-column="30" selection-end-line="327" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collectors.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Collectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147">
+              <caret line="262" column="53" lean-forward="false" selection-start-line="262" selection-start-column="53" selection-end-line="262" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collector.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Collector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -312,12 +194,12 @@
         <option value="$PROJECT_DIR$/src/main/com/tania/poiXLS/Test.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/games/Lambda.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/Data.java" />
-        <option value="$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/nasled/A.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/nasled/B.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/nasled/DoClass.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/nasled/Main.java" />
         <option value="$PROJECT_DIR$/src/main/com/tania/trycatchTEST/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java" />
       </list>
     </option>
   </component>
@@ -349,6 +231,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -423,7 +307,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nasled" />
+              <option name="myItemId" value="streamplay" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,12 +327,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ELIOT/APC/APC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -456,6 +338,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1036,6 +919,8 @@
       <workItem from="1505637825984" duration="1527000" />
       <workItem from="1505742805742" duration="748000" />
       <workItem from="1505810597065" duration="1077000" />
+      <workItem from="1505896066920" duration="605000" />
+      <workItem from="1506085100976" duration="3663000" />
     </task>
     <task id="LOCAL-00001" summary="test admin report">
       <created>1499760500187</created>
@@ -1170,11 +1055,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502120051123</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="stream game">
+      <created>1506088582752</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1506088582752</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231069000" />
+    <option name="totallyTimeSpent" value="235391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1203,14 +1095,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3580645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34301075" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25268817" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41290322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2697623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25268817" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28172043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2763958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1219,7 +1112,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34301075" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1244,7 +1136,8 @@
     <MESSAGE value="refactor doc editor" />
     <MESSAGE value="avoid intermediate xml" />
     <MESSAGE value="victory over .doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="victory over .doc" />
+    <MESSAGE value="stream game" />
+    <option name="LAST_COMMIT_MESSAGE" value="stream game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1295,9 +1188,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tania/AAA.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/tania/exersises/Office.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/tania/exersises/Test.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1415,9 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2260">
           <caret line="121" column="32" lean-forward="false" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,8 +1359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" column="55" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="1620">
+          <caret line="81" column="19" lean-forward="false" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1496,56 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43960">
           <caret line="2254" column="22" lean-forward="false" selection-start-line="2254" selection-start-column="22" selection-end-line="2254" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#219951#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#12064#12065#0" expanded="false" />
-            <element signature="e#12120#12121#0" expanded="false" />
-            <element signature="e#15818#15819#0" expanded="false" />
-            <element signature="e#15875#15876#0" expanded="false" />
-            <element signature="e#28781#28782#0" expanded="false" />
-            <element signature="e#28819#28820#0" expanded="false" />
-            <element signature="e#29794#29795#0" expanded="false" />
-            <element signature="e#29836#29837#0" expanded="false" />
-            <element signature="e#34114#34115#0" expanded="false" />
-            <element signature="e#34170#34171#0" expanded="false" />
-            <element signature="e#34844#34845#0" expanded="false" />
-            <element signature="e#34904#34905#0" expanded="false" />
-            <element signature="e#37053#37054#0" expanded="false" />
-            <element signature="e#37100#37101#0" expanded="false" />
-            <element signature="e#42006#42007#0" expanded="false" />
-            <element signature="e#42036#42037#0" expanded="false" />
-            <element signature="e#67889#67890#0" expanded="false" />
-            <element signature="e#67953#67954#0" expanded="false" />
-            <element signature="e#90031#90032#0" expanded="false" />
-            <element signature="e#90086#90087#0" expanded="false" />
-            <element signature="e#90547#90548#0" expanded="false" />
-            <element signature="e#90608#90609#0" expanded="false" />
-            <element signature="e#91445#91446#0" expanded="false" />
-            <element signature="e#91485#91486#0" expanded="false" />
-            <element signature="e#91887#91888#0" expanded="false" />
-            <element signature="e#91914#91915#0" expanded="false" />
-            <element signature="e#93495#93496#0" expanded="false" />
-            <element signature="e#93523#93524#0" expanded="false" />
-            <element signature="e#94467#94468#0" expanded="false" />
-            <element signature="e#94505#94506#0" expanded="false" />
-            <element signature="e#98207#98208#0" expanded="false" />
-            <element signature="e#98238#98239#0" expanded="false" />
-            <element signature="e#106317#106318#0" expanded="false" />
-            <element signature="e#106377#106378#0" expanded="false" />
-            <element signature="e#115713#115714#0" expanded="false" />
-            <element signature="e#115770#115771#0" expanded="false" />
-            <element signature="e#116291#116292#0" expanded="false" />
-            <element signature="e#116348#116349#0" expanded="false" />
-            <element signature="e#123496#123497#0" expanded="false" />
-            <element signature="e#123537#123538#0" expanded="false" />
-            <element signature="e#139900#139901#0" expanded="false" />
-            <element signature="e#139961#139962#0" expanded="false" />
-            <element signature="e#141074#141075#0" expanded="false" />
-            <element signature="e#141117#141118#0" expanded="false" />
-            <element signature="e#207598#207599#0" expanded="false" />
-            <element signature="e#207632#207633#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1554,7 +1391,6 @@
         <state relative-caret-position="640">
           <caret line="37" column="45" lean-forward="false" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#273#339#0" expanded="false" />
           </folding>
         </state>
@@ -1564,9 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding>
-            <element signature="e#5047#5048#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1574,18 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#246#247#0" expanded="false" />
-            <element signature="e#272#273#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#372#373#0" expanded="false" />
-            <element signature="e#400#401#0" expanded="false" />
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#476#477#0" expanded="false" />
-            <element signature="e#522#523#0" expanded="false" />
-            <element signature="e#578#579#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1593,10 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="3798" column="30" lean-forward="false" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
-          <folding>
-            <element signature="e#177013#177014#0" expanded="false" />
-            <element signature="e#177054#177055#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1604,32 +1421,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="4847" column="46" lean-forward="false" selection-start-line="4847" selection-start-column="46" selection-end-line="4847" selection-end-column="46" />
-          <folding>
-            <element signature="e#186747#186748#0" expanded="false" />
-            <element signature="e#186792#186793#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/tania/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/tania/nasled/A.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#237#238#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1637,10 +1436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#212#213#0" expanded="false" />
-            <element signature="e#246#247#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1648,7 +1443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1656,7 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,6 +1457,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Collector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Collectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="262" column="53" lean-forward="false" selection-start-line="262" selection-start-column="53" selection-end-line="262" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="327" column="30" lean-forward="true" selection-start-line="327" selection-start-column="30" selection-end-line="327" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1672,6 +1488,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/tania/streamplay/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
           <folding />
         </state>
       </provider>
