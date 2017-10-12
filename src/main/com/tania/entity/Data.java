@@ -1,4 +1,4 @@
-package com.tania;
+package com.tania.entity;
 
 /**
  * Created by tanya on 04.09.17.

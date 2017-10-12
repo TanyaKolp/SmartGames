@@ -86,5 +86,20 @@
             <Column>1</Column>
             <Column>3</Column>
         </Row>
+        <Row>
+            <Column>Итого</Column>
+            <Column></Column>
+            <Column></Column>
+            <Column>1231546</Column>
+            <Column>4234324</Column>
+            <Column>type</Column>
+            <Column>ss</Column>
+            <Column>04-15-1956</Column>
+            <Column>04-15-1957</Column>
+            <Column>10</Column>
+            <Column>5</Column>
+            <Column>1</Column>
+            <Column>3</Column>
+        </Row>
     </Rows>
 </ReportData>

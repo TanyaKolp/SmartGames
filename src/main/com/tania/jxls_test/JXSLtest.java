@@ -1,7 +1,5 @@
 package com.tania.jxls_test;
 
-import com.tania.Data;
-import com.tania.mapreduce.KeyValueObj;
 import org.jxls.common.Context;
 import org.jxls.util.JxlsHelper;
 
