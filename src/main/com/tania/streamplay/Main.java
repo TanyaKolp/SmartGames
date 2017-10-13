@@ -74,7 +74,7 @@ public class Main {
         System.out.println("FULL statistics (sum count avg min max) by obj field");
         Map<String, DoubleSummaryStatistics> collect1 = itemList.stream()
                 .collect(Collectors.groupingBy((i -> i.getName()), Collectors.summarizingDouble(i -> i.getPrice())));
-        System.out.println("Summarize" + collect1);
+        System.out.println("Summarize = " + collect1);
     }
 
     private static void transformToNewObjList_getSumsByName(List<Item> itemList) {
@@ -92,14 +92,14 @@ public class Main {
         System.out.println("map key - sum by field");
         Map<String, Double> mapSum = itemList.stream()
                 .collect(Collectors.groupingBy((i -> i.getName()), Collectors.summingDouble(i -> i.getPrice())));
-        System.out.println("Item sum" + mapSum);
+        System.out.println("Item sum = " + mapSum);
     }
 
     private static void getCountByObjName(List<Item> itemList) {
         System.out.println("\n*****");
         System.out.println("map key - count by field");
         Map<String, Long> mapCount = itemList.stream().collect(Collectors.groupingBy((i -> i.getName()), Collectors.counting()));
-        System.out.println("Item count" + mapCount);
+        System.out.println("Item count = " + mapCount);
     }
 
     private static List<Data> fillDataList() {
