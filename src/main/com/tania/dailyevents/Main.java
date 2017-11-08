@@ -2,11 +2,13 @@ package com.tania.dailyevents;
 
 import com.tania.entity.DayOfEvent;
 import com.tania.entity.Event;
+import org.apache.commons.lang.time.DateUtils;
 
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -20,12 +22,23 @@ public class Main {
         System.out.println("now and " + event.getEndDate() + " = " + now.compareTo(event.getEndDate()));
         System.out.println("now and " + event.getStartTime() + " = " + now.compareTo(event.getStartTime()));
         System.out.println("now and " + event.getEndTime() + " = " + now.compareTo(event.getEndTime()));
+        System.out.println(DateUtils.isSameDay(now, event.getEndDate()));
+        Calendar eventCalend = Calendar.getInstance();
+        eventCalend.setTime(event.getEndDate());
+        int eHour = eventCalend.get(Calendar.HOUR);
+        int eMinute = eventCalend.get(Calendar.MINUTE);
+        Calendar nowCalend = Calendar.getInstance();
+        nowCalend.setTime(now);
+        int nowHour = nowCalend.get(Calendar.HOUR);
+        int nowMinute = nowCalend.get(Calendar.MINUTE);
+        System.out.println("***********");
+//        if(eHour)
     }
 
     private static Event getEvent() {
         Event event = new Event("qw");
         event.setStartDate(Date.valueOf("2017-10-25"));
-        event.setEndDate(Date.valueOf("2017-10-27"));
+        event.setEndDate(Date.valueOf("2017-11-02"));
         event.setStartTime(Time.valueOf("10:00:00"));
         event.setEndTime(Time.valueOf("16:00:00"));
         event.setDays(getDays(new int[]{1, 2, 3}, event));

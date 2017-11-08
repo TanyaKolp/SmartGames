@@ -1,10 +1,12 @@
 package com.tania.streamplay;
 
+import com.google.common.base.Functions;
 import com.tania.entity.Data;
 import com.tania.entity.Item;
 import org.apache.hadoop.yarn.webapp.hamlet.Hamlet;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -57,7 +59,6 @@ public class Main {
         System.out.println(smart);
         System.out.println(fullUse);
 
-
         List<Item> itemList = fillItemList();
 
         getStatisticsByField(itemList);
@@ -67,11 +68,30 @@ public class Main {
         getSumsByObjName(itemList);
 
         transformToNewObjList_getSumsByName(itemList);
+        filter_and_check();
+    }
+
+    private static void filter_and_check() {
+        System.out.println("\n*****");
+        System.out.println("filter_and_check");
+        List<Integer> interger = Arrays.asList(1, 2, 3, 4, 5, 6);
+//        interger = Collections.emptyList();
+        Optional<Integer> first = interger.stream().filter(integer -> integer == 9).findFirst();
+        if (first.isPresent()) {
+            System.out.println("y");
+        } else {
+            System.out.println("n");
+        }
+        System.out.println("*******");
+        System.out.println("anyMatch usage");
+        System.out.println( interger.stream().anyMatch(i -> i == 5));
     }
 
     private static void getStatisticsByField(List<Item> itemList) {
         System.out.println("\n*****");
         System.out.println("FULL statistics (sum count avg min max) by obj field");
+        Map<String, Item> collect = itemList.stream().collect(Collectors.toMap(i -> i.getName(), Function.identity()));
+        System.out.println("qwheqwkh = " + collect);
         Map<String, DoubleSummaryStatistics> collect1 = itemList.stream()
                 .collect(Collectors.groupingBy((i -> i.getName()), Collectors.summarizingDouble(i -> i.getPrice())));
         System.out.println("Summarize = " + collect1);
@@ -124,21 +144,21 @@ public class Main {
     public static List<Item> fillItemList() {
         List<Item> res = new ArrayList<>();
         res.add(new Item("q", 10.0));
-        res.add(new Item("q", 10.0));
-        res.add(new Item("q", 10.0));
-        res.add(new Item("q", 10.0));
-        res.add(new Item("w", 50.0));
-        res.add(new Item("w", 50.0));
-        res.add(new Item("w", 50.0));
-        res.add(new Item("w", 50.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
-        res.add(new Item("r", 4.0));
+        res.add(new Item("r", 10.0));
+        res.add(new Item("t", 10.0));
+        res.add(new Item("y", 10.0));
+        res.add(new Item("u", 50.0));
+        res.add(new Item("i", 50.0));
+        res.add(new Item("o", 50.0));
+        res.add(new Item("p", 50.0));
+        res.add(new Item("7584", 4.0));
+        res.add(new Item("d", 4.0));
+        res.add(new Item("v", 4.0));
+        res.add(new Item("c", 4.0));
+        res.add(new Item("b", 4.0));
+        res.add(new Item("n", 4.0));
+        res.add(new Item(",", 4.0));
+        res.add(new Item("[", 4.0));
         return res;
     }
 }
