@@ -69,6 +69,56 @@ public class Main {
 
         transformToNewObjList_getSumsByName(itemList);
         filter_and_check();
+
+        null_in_returnList();
+
+        group_By();
+//        null_value_map();
+
+        List<Integer> list = Arrays.asList(1, 2, 3, 3, 4, 5, 5);
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = i + 1; j < list.size(); j++) {
+                list.remove(j);
+                System.out.println(list);
+            }
+        }
+
+    }
+
+    private static void qwer() {
+
+    }
+
+    private static void null_value_map() {
+        System.out.println("\n*****");
+        System.out.println(" null map");
+        List<Integer> integers = Arrays.asList(1, 2, 3, 4);
+        List<Integer> nn = Arrays.asList(null, 2, null, 4);
+        Map<Integer, Object> collect = integers.stream().collect(Collectors.toMap(i -> i, null));
+        System.out.println(collect);
+
+    }
+
+    private static void group_By() {
+        System.out.println("\n*****");
+        System.out.println("   group_By");
+        List<Item> itemList = fillItemList();
+        Map<Double, List<Item>> collect = itemList.stream().collect(Collectors.groupingBy(Item::getPrice));
+        System.out.println(collect);
+        itemList.stream().max(Comparator.comparing(i -> i.getPrice())).get();
+    }
+
+    private static void null_in_returnList() {
+        System.out.println("\n*****");
+        System.out.println(" null_in_returnList");
+        List<Integer> interger = Arrays.asList(1, 2, 3, 4, 5, 6);
+        List<Integer> collect = interger.stream().map(integer -> returnNull(integer))
+                .filter(r -> Objects.nonNull(r)).collect(Collectors.toList());
+        System.out.println(collect);
+    }
+
+    private static Integer returnNull(Integer integer) {
+        return null;
     }
 
     private static void filter_and_check() {
@@ -84,7 +134,7 @@ public class Main {
         }
         System.out.println("*******");
         System.out.println("anyMatch usage");
-        System.out.println( interger.stream().anyMatch(i -> i == 5));
+        System.out.println(interger.stream().anyMatch(i -> i == 5));
     }
 
     private static void getStatisticsByField(List<Item> itemList) {

@@ -1,5 +1,10 @@
 package com.tania;
 
+import com.google.common.base.Strings;
+import com.google.common.collect.ImmutableMap;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.*;
 
 import java.sql.Time;
@@ -8,35 +13,61 @@ import java.sql.Time;
  * Created by tanya on 11.10.17.
  */
 public class Main {
-    public static void main(String[] args) {
-        System.out.println((new Byte("10") / 100.0));
-        System.out.println((new Byte("10") / 100));
-        Date now = java.sql.Date.valueOf("2017-01-01");
-        int i = 0;
-        Time time = Time.valueOf("16:44:50");
-        if (time.after(now)) {
-            System.out.println("yes");
-        }
-        if (now.after(time)) {
-            System.out.println("now yes");
+    public static void main(String[] args) throws IllegalAccessException {
+        FignyClass fignyClass = new FignyClass();
+        fignyClass.setEma("dsf");
+        fignyClass.setQwe("");
+        System.out.println(fignyClass);
+
+        Field[] declaredFields = fignyClass.getClass().getDeclaredFields();
+        for (Field f : declaredFields) {
+            f.setAccessible(true);
+//            if(f.getType() == String.class )
+            System.out.println("field " + f.get(fignyClass));
+            if (f.getType() == String.class && Strings.isNullOrEmpty(f.get(fignyClass).toString()))
+                f.set(fignyClass, null);
         }
 
-        List<String> list = new ArrayList<>();
-        if (i == 0) {
-            list = null;
+
+        System.out.println("************************");
+        System.out.println(0 < 0);
+
+        System.out.println("************************");
+        System.out.println(7 % 5);
+
+        Random random = new Random();
+        System.out.println(random.nextInt(15));
+        System.out.println("***********Random*************");
+
+        int size = 1;
+        Random random2 = new Random();
+        System.out.println(random2.nextInt(size));
+        Random random3 = new Random();
+        System.out.println(random3.nextInt(size));
+        Random random4 = new Random();
+        System.out.println(random4.nextInt(size));
+        Random random5 = new Random();
+        System.out.println(random5.nextInt(size));
+
+        System.out.println("************************");
+
+        System.out.println((int) (Math.random() * size));
+        System.out.println((int) (Math.random() * size));
+        System.out.println((int) (Math.random() * size));
+        System.out.println((int) (Math.random() * size));
+
+    }
+
+
+    private static List getlist() {
+        List<Map<String, Object>> res = new ArrayList<>();
+        Map<String, Object> map = new HashMap<>();
+        map.put("kl", "dsklj");
+        map.put("kl", "dsklj");
+        map.put("kl", "dsklj");
+        for (int i = 0; i < 3; i++) {
+            res.add(map);
         }
-//        list.forEach(s -> System.out.println(s));
-//        String random = UUID.fromString(String.valueOf(System.currentTimeMillis())).toString();
-        String random = UUID.randomUUID().toString();
-        System.out.println("random=" + random);
-        String[] split = "1234567".split("(?!^)");
-        List<Integer> interger = Arrays.asList(1, 2, 3, 4, 5, 6);
-        interger = Collections.emptyList();
-        Optional<Integer> first = interger.stream().filter(integer -> integer == 9).findFirst();
-        if (first.isPresent()) {
-            System.out.println("y");
-        } else {
-            System.out.println("n");
-        }
+        return res;
     }
 }
