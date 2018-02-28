@@ -1,16 +1,22 @@
 package com.tania.model_mapper;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * Created by tanya on 05.02.18.
  */
-@JsonIgnoreProperties({"id"})
 public class Dto {
-    //    @JsonDeserialize(converter = )
     private Integer id;
     private Integer itemId;
     private String desc;
+
+    public Dto() {
+    }
+
+    public Dto(Integer id, Integer itemId, String desc) {
+        this.id = id;
+        this.itemId = itemId;
+        this.desc = desc;
+    }
 
     @Override
     public String toString() {

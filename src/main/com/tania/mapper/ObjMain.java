@@ -1,5 +1,7 @@
 package com.tania.mapper;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 import java.util.List;
 
 /**
@@ -7,8 +9,10 @@ import java.util.List;
  */
 public class ObjMain {
     private Long id;
+    @JsonView(value = {UserView.class})
     private Long itemId;
     private String name;
+    @JsonView(value = Update.class)
     private Integer number;
     private List<Obj_sub> obj_subs;
     private List<Obj_sub> list;
