@@ -78,10 +78,13 @@ public class ObjMain {
     @Override
     public String toString() {
         return "ObjMain{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", itemId=" + itemId +
+                ", name='" + name + '\'' +
                 ", number=" + number +
                 ", obj_subs=" + obj_subs +
                 ", list=" + list +
+                ", obj_sub=" + obj_sub +
                 '}';
     }
 }

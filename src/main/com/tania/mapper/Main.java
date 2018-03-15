@@ -1,7 +1,10 @@
 package com.tania.mapper;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 import org.modelmapper.*;
 
 import java.io.IOException;
@@ -12,7 +15,7 @@ import java.util.stream.Collectors;
  * Created by tanya on 12.12.17.
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ObjDto dto = new ObjDto();
         dto.setObj_sub(122L);
         dto.setName("testQwerty");
@@ -23,10 +26,19 @@ public class Main {
         objMain.setId(1L);
         objMain.setObj_sub(getSub());
 
-        ModelMapper modelMapper = new ModelMapper();
+        ObjMain mainUpdate = new ObjMain();
+        mainUpdate.setName("ASDFAS");
 
-        System.out.println("********** HASH ************");
+        System.out.println(objMain);
         ObjectMapper objectMapper = new ObjectMapper();
+        System.out.println("********** merge obj ************");
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+
+        ObjectReader updating = objectMapper.readerForUpdating(objMain);
+        objMain = updating.readValue(objectMapper.writeValueAsString(mainUpdate) );
+        System.out.println(objMain);
+        System.out.println("********** HASH ************");
+
         try {
             Map hashMap = objectMapper.readValue(getJsno(), HashMap.class);
             System.out.println(hashMap);
