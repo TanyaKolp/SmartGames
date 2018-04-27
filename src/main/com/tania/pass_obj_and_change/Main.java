@@ -17,7 +17,7 @@ public class Main {
         System.out.println("create link");
         changingObject = createLink(changingObject);
 
-        System.out.println("Main end");
+        System.out.println("CompareStrings end");
         System.out.println(changingObject);
     }
 

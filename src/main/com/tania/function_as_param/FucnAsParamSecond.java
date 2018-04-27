@@ -61,6 +61,5 @@ public class FucnAsParamSecond {
 
 
     public static void main(String[] args) {
-        new FunctionAsParameter().runTest();
     }
 }

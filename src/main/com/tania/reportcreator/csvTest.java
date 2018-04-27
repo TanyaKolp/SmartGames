@@ -1,6 +1,7 @@
 package com.tania.reportcreator;
 
-import au.com.bytecode.opencsv.CSVWriter;
+
+import com.opencsv.CSVWriter;
 
 import java.io.File;
 import java.io.FileWriter;

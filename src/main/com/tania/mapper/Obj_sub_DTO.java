@@ -3,7 +3,8 @@ package com.tania.mapper;
 /**
  * Created by tanya on 12.12.17.
  */
-public class Obj_sub_DTO {
+public class
+Obj_sub_DTO {
     private String name;
     private Long id;
 

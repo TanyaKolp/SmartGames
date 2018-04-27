@@ -3,7 +3,7 @@ package com.tania.entity;
 /**
  * Created by tanya on 12.10.17.
  */
-public class Item {
+public class Item implements Comparable{
     String name;
     Double price;
 
@@ -38,5 +38,10 @@ public class Item {
     @Override
     public String toString() {
         return String.format("%s - %s", this.name, this.price);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
